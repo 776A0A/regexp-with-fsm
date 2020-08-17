@@ -7,7 +7,7 @@ function createNext(str) {
 		if (str[x] === str[y]) {
 			next[x++] = ++y
 		} else {
-			if (y > 0) y--
+			if (y > 0) y = next[y - 1]
 			else x++
 		}
 	}
