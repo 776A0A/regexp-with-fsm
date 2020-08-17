@@ -1,5 +1,3 @@
-const match = require('./index')
+const match = require('./kmp')
 
-
-console.log(match('abababcabev', 'ababc'))
-console.log(1);
+console.log(match('a', 'a'));

@@ -18,15 +18,15 @@ function match(target, pattern) {
 	let i = 0
 	for (; i < targetArr.length; i++) {
 		m = i
-		const res = _match(targetArr[m], patternArr[++n])
-		if (!res) n = 0
+		const res = compare(targetArr[m], patternArr[++n])
+		if (!res) n = -1
 		if (n + 1 === patternArr.length) return true
-  }
-  
+	}
+
 	return false
 }
 
-function _match(t, p) {
+function compare(t, p) {
 	console.log(t, p)
 	return t === p
 }
